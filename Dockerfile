@@ -1,4 +1,6 @@
-FROM public.ecr.aws/docker/library/python:3.11-slim
+FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /app
 
